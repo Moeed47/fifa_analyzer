@@ -62,6 +62,7 @@ def count_players(video_path, model_path="yolov8n.pt", show=False, output=None):
         cv2.destroyAllWindows()
 
 
+
 # ---------------------------------------------------------------------------
 # Hardcoded configuration
 # ---------------------------------------------------------------------------
