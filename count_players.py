@@ -62,15 +62,22 @@ def count_players(video_path, model_path="yolov8n.pt", show=False, output=None):
         cv2.destroyAllWindows()
 
 
+
+# ---------------------------------------------------------------------------
+# Hardcoded configuration
+# ---------------------------------------------------------------------------
+# Adjust these variables to use your own video, YOLO weights, and display
+# preferences. ``output`` can be set to a file path to save the annotated video
+# or ``None`` to disable saving.
+VIDEO_PATH = "path/to/ea25_gameplay.mp4"
+MODEL_PATH = "yolov8n.pt"
+SHOW = False
+OUTPUT = None
+
+
 def main():
-    """Prompt for parameters and run player counting."""
-    video_path = input("Path to EA25 gameplay video file: ")
-    model_path = input("Path to YOLOv8 weights [yolov8n.pt]: ") or "yolov8n.pt"
-    show = input("Display annotated frames? [y/N]: ").strip().lower() == "y"
-    output = input(
-        "Optional path to save the annotated video (leave blank to skip): "
-    ).strip() or None
-    count_players(video_path, model_path, show, output)
+    """Run player counting using the hardcoded configuration."""
+    count_players(VIDEO_PATH, MODEL_PATH, SHOW, OUTPUT)
 
 
 if __name__ == "__main__":
