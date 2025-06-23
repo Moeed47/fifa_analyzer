@@ -7,7 +7,7 @@ This repository demonstrates counting the number of players in each frame of an 
 Install dependencies with pip:
 
 ```bash
-pip install opencv-python-headless ultralytics
+pip install -r requirements.txt
 ```
 
 ## Usage
