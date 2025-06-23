@@ -12,11 +12,12 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the `count_players.py` script with the path to your gameplay video. You can
-optionally specify a custom YOLOv8 weight file using `--model`:
+Edit the configuration variables at the bottom of `count_players.py` to set the
+video path, model weights, and display options. Then run the script directly:
 
 ```bash
-python count_players.py /path/to/ea25_gameplay.mp4 --model yolov8n.pt
+python count_players.py
 ```
 
-The script prints the detected number of players for every frame.
+The script prints the detected number of players for every frame and, if
+enabled, shows or saves the annotated video.
